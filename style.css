@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+ font-family:sans-serif;
+ font-size:16px;
+}
+/* Below style of the error message that appears only when the focus of the field is changed without any filling */
+.msg-erro{
+ color:#ff0000;
+ font-size:12px;
+ font-style:italic;
+}

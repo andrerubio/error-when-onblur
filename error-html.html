@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="style.css" rel="stylesheet">
+<title>Error When Onblur</title>
+</head>
+
+<body>
+<!-- Ao mudar o foco dos campos abaixo (onblur) é disparada a função 'validarCampoVazio' -->
+
+Nome: <input id="nome" name="nome" onblur="validarCampoVazio(this, document.getElementById('msgNome'))" size="12" type="text">
+<!-- este span abaixo, mostrará a mensagem de erro caso seja trocado o foco do campo sem nenhum preenchimento -->
+<span class="msg-erro" id="msgNome"></span>
+
+E-mail: <input id="email" name="email" onblur="validarCampoVazio(this, document.getElementById('msgEmail'))" size="12" type="text">
+<!-- este span abaixo, mostrará a mensagem de erro caso seja trocado o foco do campo sem nenhum preenchimento -->
+<span class="msg-erro" id="msgEmail"></span>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
